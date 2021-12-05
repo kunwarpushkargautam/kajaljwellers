@@ -177,6 +177,38 @@ ul {
   margin-left: 0;
 }
 
+/* ========adding nav features================================================= */
+button.navbar-toggler {
+  border: none;
+}
+button.navbar-toggler:focus {
+  outline: none !important;
+  border: none;
+  box-shadow: none;
+}
+.offcanvas {
+  top: 0;
+  left: 0;
+  width: 200px;
+
+  transform: translateX(-100%);
+}
+
+.nav-item {
+  font-size: 1.1rem;
+}
+a.navbar-brand {
+  font-size: 1.4rem;
+  /* font-weight: 600; */
+  color: #a8741a !important;
+}
+.offcanvas-title {
+  font-size: 1.2rem;
+  color: #a8741a;
+}
+
+/* ============end nav features============================================== */
+
 .social_icone ul li a {
   background: #ebebeb;
   color: #aaaaaa;
@@ -1161,6 +1193,7 @@ ul {
   color: #a8741a;
   font-weight: 400;
   font-family: "Baloo 2", serif;
+  
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1243,7 +1276,8 @@ ul {
 }
 
 .product_black_section .product_tab_button ul.nav {
-  border: 2px solid #2d2d2d;
+  /* border: 2px solid #2d2d2d; */
+  border: none;
 }
 
 .product_black_section .product_tab_button ul.nav::before {
@@ -1252,12 +1286,16 @@ ul {
 /* .product_black_section .product_tab_button ul.nav::after {
   background-image: linear-gradient(to right, #2d2d2d, transparent);
 } */
-.product_black_section .product_tab_button ul.nav li:first-child a {
+
+/* .product_black_section .product_tab_button ul.nav li:first-child a {
   border-left: 0;
-}
+} */
 
 .product_black_section .product_tab_button ul.nav li a {
-  border-left: 2px solid #2d2d2d;
+  border: none;
+  
+  border: 1px solid;
+  margin: 4px auto;
   color: #ffffff;
   font-family: "Baloo 2", serif;
 }
@@ -1265,12 +1303,18 @@ ul {
 .product_black_section .product_tab_button ul.nav li a:hover {
   color: #a8741a;
 }
+/* .product_black_section .product_tab_button ul.nav li a:focus {
+  color: #a8741a;
+  background-color: #242424;
+} */
 .product_black_section .product_tab_button ul.nav li a.active {
   color: #a8741a;
+  background-color: #242424;
 }
 
 .product_black_section .product_tab_button ul.nav li a.active::before {
-  border: 2px solid #a8741a;
+  
+  border: none;
 }
 .product_tab_button {
   margin-bottom: 35px;
@@ -1286,7 +1330,7 @@ ul {
 .product_tab_button ul.nav {
   display: inline-block;
   position: relative;
-  border: 2px solid #2d2d2d;
+  /* border: 2px solid #2d2d2d; */
 }
 
 /* .product_tab_button ul.nav::before {
@@ -1949,7 +1993,7 @@ ul {
 .instagram__item {
   height: 320px;
   display: flex;
-  align-items: center;
+  
   justify-content: center;
   position: relative;
   z-index: 1;

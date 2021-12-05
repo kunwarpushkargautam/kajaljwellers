@@ -27,7 +27,8 @@
     $("[data-bgimg]").each(function () {
       var bgImgUrl = $(this).data("bgimg");
       $(this).css({
-        "background-image": "url(" + bgImgUrl + ")", // concatenation
+        "background-image": "url(" + bgImgUrl + ")",
+        // concatenation
       });
     });
   }
@@ -53,7 +54,7 @@
     centerPadding: "0",
     slidesToShow: 5,
     arrows: true,
-    // rows: 3,
+    rows: 2,
     prevArrow:
       '<button class="prev_arrow"><i class="ion-chevron-left"></i></button>',
     nextArrow:
@@ -105,7 +106,9 @@
     centerMode: true,
     centerPadding: "0",
     slidesToShow: 4,
+
     arrows: true,
+    rows: 2,
     prevArrow:
       '<button class="prev_arrow"><i class="ion-chevron-left"></i></button>',
     nextArrow:
